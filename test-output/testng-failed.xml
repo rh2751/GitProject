@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.SampleTest2">
+      <class name="testScripts.ReportsTest">
         <methods>
-          <include name="seleniumSearchTest"/>
           <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="pythonSearchTest"/>
+          <include name="setupExtent"/>
+          <include name="teardown"/>
+          <include name="finishTest"/>
         </methods>
-      </class> <!-- testScripts.SampleTest2 -->
+      </class> <!-- testScripts.ReportsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
